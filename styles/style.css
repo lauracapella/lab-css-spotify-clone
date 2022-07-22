@@ -8,6 +8,8 @@ White: #FFF
 */
 body{
     margin:0;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 h1{
@@ -99,24 +101,109 @@ h4{
 
 .app-container{
     background-color:#00B172;
-    padding: 50px;
+     padding: 50px; 
 }
 
 .app-container{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
+    row-gap: 50px;
+    column-gap: 50px;
 }
 
 .img-app-logo{
-    max-width: 50px;
+    max-width: 150px;
 }
 
 .img-app-app{
-    max-width: 250px;
+    max-width: 350px;
 }
 
 .tit-app-app{
     text-align: left;
     color: white;
+    text-align: center;
+}
+
+.subttit-app{
+    color: white;
+    font-weight: 600;
+
+}
+
+.text-app{
+    color: white;
+}
+
+.app-item-appimg{
+    flex-grow: 1;
+   /*  max-width: 30%; */
+    order: 3;
+
+}
+
+.app-item-logo{
+    flex-grow: 1;
+   /*  max-width: 30%; */
+    order: 1;
+}
+
+.app-item-text{
+    flex-grow: 1;
+    /* max-width: 30%; */
+    order: 2;
+    text-align: center;
+}
+
+
+@media screen 
+  and (min-device-width: 1200px) 
+   { 
+    .navbar-container{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .whats-spotify-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin: 50px 0px 50px 0px;
+    }
+
+    .app-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        row-gap: 50px;
+        column-gap: 50px;
+    }
+    .app-item-text{
+        max-width: 30%;
+        order: 0;
+        text-align: left;
+    }
+    .app-item-logo{
+       max-width: 30%;
+        order: 0;
+    }
+    .app-item-appimg{
+       max-width: 30%;
+        order: 0;
+    
+    }
+
+    .tit-app-app{
+        text-align: left;
+        color: white;
+        text-align: left;
+    }
+    
+
 }
